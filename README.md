@@ -41,7 +41,7 @@ To start the process, your user needs to click a "Sign In With twitter" link/but
 const response = await twitterSignIn.getRequestToken();
 const requestToken = response.oauth_token;
 const requestTokenSecret = response.oauth_token_secret;
-const callbackConfirmed = oauth_callback_confirmed;
+const callbackConfirmed = response.oauth_callback_confirmed;
 ```
 
 You can pass in optional parameters:
